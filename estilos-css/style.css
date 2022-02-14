@@ -1,0 +1,444 @@
+* {
+    Margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+html{
+    min-height: 100%;
+    position: relative;
+    
+}
+ body {
+    display: grid;
+    height: 100%;
+    background: rgba(0,100,102,1);
+    background: linear-gradient(to bottom, rgba(0,100,102,1) 0%, rgba(36,34,73,1) 100%); 
+    background-attachment: fixed;
+    gap: 2rem;
+    grid-template-areas: "header"
+                         "main"
+                         "footer"
+}
+
+/* HEADER GENERICO */
+
+header{
+    grid-area: header;
+    display:flex;
+    align-items: center;
+    background-color: #8eecf5;
+    
+}
+header a img{
+    height: 100px;
+}
+header ul{
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+header ul li a{
+    margin-left: 1rem;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    background-color: #8eecf5;
+    color: black;
+}
+header ul li a:hover{
+    padding: 0.2rem;
+    border-radius: 200px 200px 200px 0px;
+    background: rgb(255, 255, 255, 0.5);
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__list--selectedItem {
+    padding: 0.5rem;
+    border-radius: 200px 200px 200px 0px;
+    background: rgb(255, 255, 255, 0.5);
+    font-weight: bold;
+} /*No logro hacer que al pasar el cursor no se modifique*/
+
+/* FIN HEADER GENERICO */
+
+main{
+    grid-area: main;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+footer{
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+footer p{
+    color: white;
+}
+footer section{
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div a{
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.footer__redes{
+    margin: 1rem;
+    border-right: 2px solid #FFFF;
+}
+
+.footer__inferior{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.icono{
+    width: 25px;
+    height: 25px;
+}
+.contenedor__imgPrincipal{
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    
+}   
+.imagenPrincipal{
+    position: absolute;
+    bottom:-5rem;
+    width: 100%;
+}
+.contacto__h2{
+    margin-top:2rem;
+    color: black;
+    font-size: 20px;
+}
+.contacto__data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 1rem;
+    --glow-color: #8eecf5;
+    --glow-spread-color: rgba(130, 97, 250, 0.781);
+    width: 500px;
+    height: 295px;
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 0.5em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+    border-radius: 200px 200px 200px 0px;
+    border: 1px solid var(--glow-color);
+    background: #90dbf4;
+    border-radius: 200px 200px 1px 200px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+.contacto__data div{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.contacto_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --glow-color: #c42cb7;
+    --glow-spread-color: rgba(176, 97, 250, 0.781);
+    position: absolute;
+    right: 0;
+    width: 500px;
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 0.5em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+    border-radius: 200px 200px 200px 0px;
+    border: 1px solid var(--glow-color);
+    background: #4d194d;
+    margin-right: 20px;
+}
+.contacto_form fieldset{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto_form legend{
+    
+    color: white;
+    padding-top: 20px;
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-weight: bold;
+    
+}
+.contacto_form div{
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+.contacto_form fieldset{
+    border: hidden;
+}
+.contacto_button{
+    --glow-color: #90dbf4;
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: #0b525b;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 2em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+    margin-top: 1rem;
+   }
+   
+    .contacto_button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .contacto_button:hover {
+    color: black;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .contacto_button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+
+
+.textoConImagen{
+    margin-bottom: 1.5rem;
+    overflow: auto;
+}
+.flotanteIzq{
+    float: left;
+    width: 400px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+.pharagrap{
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+main h2{
+    margin-top: 1rem;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.flotanteDer{
+    float: right;
+    width: 400px;
+    margin-left: 10px;
+}
+.contenedor__imagen--chico{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px black;
+}
+.fila{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.imagen--chica{
+    height: 450px;
+}
+.background{
+    position: relative;
+    opacity: 0.4;
+}
+.widthComplete{
+    width: 100%;
+}
+.main--conFondos{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0rem;
+    position: relative;
+}
+.imagen--horizontal{
+    height: 100%;
+}
+.imagen--vertical{
+    width: 100%;
+}
+.portfolio__contenedorDeImagen{
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: -4px 4px 10px rgb(27, 0, 34);
+}
+.flowerSection--front{
+    position: absolute;
+    /*top: 0px;*/
+    height: 60%;
+    width: 45%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(3,33%);
+    grid-template-areas: "leftUp centerUp rigthUp"
+                         "leftCenter center rigthCenter"
+                         "leftDown centerDown rigthDown"
+}
+.flower--leftUp{
+    grid-area: leftUp;
+    justify-self: center;
+    align-self: end;
+}
+.flower--leftUp:hover{
+    grid-area: leftUp;
+    justify-self: start;
+    align-self: start;
+}
+.flower--centerUp{
+    grid-area: centerUp;
+    align-self: start;
+}
+.flower--rigthUp{
+    grid-area: rigthUp;
+    justify-self: center;
+    align-self: end;
+}
+.flower--leftCenter{
+    grid-area: leftCenter;
+    justify-self: start;
+}
+.flower--center{
+    grid-area: center;
+}
+.flower--rigthCenter{
+    grid-area: rigthCenter;
+    justify-self: end;
+}
+.flower--leftDown{
+    grid-area: leftDown;
+    align-self: start;
+    justify-self: center;
+}
+.flower--centerDown{
+    grid-area: centerDown;
+    align-self: end;
+}
+.flower--rigthDown{
+    grid-area: rigthDown;
+    align-self: start;
+    justify-self: center;
+}
+.flowerSection--back{
+    position: absolute;
+    /*top: 0px;*/
+    width: 30%;
+    height: 40%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,50%);
+    grid-template-areas: "leftUp  rigthUp"
+                         "leftDown rigthDown"
+}
+.flowerBack--leftUp{
+    opacity: 0.7;
+    grid-area: leftUp;
+    justify-self: center;
+}
+.flowerBack--rigthUp{
+    opacity: 0.7;
+    grid-area: rigthUp;
+}
+.flowerBack--leftDown{
+    opacity: 0.7;
+    grid-area: leftDown;
+    justify-self: center;
+}
+.flowerBack--rigthDown{
+    opacity: 0.7;
+    grid-area: rigthDown;
+}
+
+  .cont--circular{
+    overflow: hidden;
+    border-radius: 200px 200px 200px 200px;
+    height: 400px;
+  }
+  .chico{
+      width: 200px;
+      height: 200px;
+  }
+.aparecible{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: once;
+ }
+
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ .section--conFondo{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .flowerSection--front:hover{
+     width: 90%;
+     height: 90%;
+ }
+ 

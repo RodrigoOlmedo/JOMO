@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../estilos-css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../multimedia/jomo2.png" alt="logo"></a>
+        <nav>
+            <img src="../multimedia/" alt="">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="destacadas.html">Portfolio</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="informacion.html">Quienes somos?</a></li>
+                <li><a class="header__list--selectedItem" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contacto__data">
+            <h2 class="contacto__h2">Por consultas y contrataciones:</h2>
+            <div>Celular: +54 11 xxxxxxxx / +54 11 xxxxxxxx </div>
+            <div>E-mail: jomoFotografia@gmail.com</div>
+            <div>Nuestras redes: 
+                <a href="https://www.instagram.com/"><img class="icono" src="../multimedia/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/"><img class="icono" src="../multimedia/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtubecom/"><img class="icono" src="../multimedia/youtube.png" alt="youtube"></a>
+            </div>
+        </section>
+        <form class="contacto_form" action="" method="get">
+            <fieldset>
+                <legend class="contacto__h2">O completá y te contactamos</legend>
+                <div>   
+                    <label for="Nombre">Nombre: </label>
+                    <input type="text" name="Nombre" id="" placeholder="Ingrese su nombre" required>
+                </div>
+                <div>
+                    <label for="Apellido">Apellido: </label>
+                    <input type="text" name="Apellido" id="" placeholder="Ingrese su apellido" required>
+                </div>
+                <div>
+                    <label for="emailEntry">Email:</label>
+                    <input type="email" name="emailEntry" id="" placeholder="Ingrese su email" required>
+                </div>
+                <div>
+                    <label for="cellEntry">Celular: </label>
+                    <input type="number" name="cellEntry" id="" placeholder="Ingrese su telefono" required>
+                </div>
+                <div>
+                    <select name="consulta" id="">
+                        <option value="byDefect" disabled selected>Seleccione su tipo de consulta:</option>
+                        <option value="">Fotografía de eventos</option>
+                        <option value="">Book de fotos</option>
+                        <option value="">Sumarse al equipo</option>
+                    </select>
+                </div>
+                <input class="button contacto_button" type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <section class="footer__redes">
+            <p>Seguinos en nuestras redes!</p>
+            <div> 
+                <a href=""><img class="icono" src="../multimedia/instagram.png" alt="instagram"></a>
+                <a href=""><img class="icono" src="../multimedia/facebook.png" alt="facebook"></a>
+                <a href=""><img class="icono" src="../multimedia/youtube.png" alt="youtube"></a>
+            </div>
+        </section>
+        <p class="footer__inferior"> Todos los derechos reservados. JOMO &copy 2022;</p>
+    </footer> 
+</body>
+</html>
