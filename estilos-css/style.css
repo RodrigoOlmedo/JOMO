@@ -324,6 +324,7 @@ main h2{
     /*top: 0px;*/
     height: 60%;
     width: 45%;
+    transition: width 2s, height 2s;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -337,11 +338,6 @@ main h2{
     grid-area: leftUp;
     justify-self: center;
     align-self: end;
-}
-.flower--leftUp:hover{
-    grid-area: leftUp;
-    justify-self: start;
-    align-self: start;
 }
 .flower--centerUp{
     grid-area: centerUp;
@@ -393,7 +389,6 @@ main h2{
 .flowerBack--leftUp{
     opacity: 0.7;
     grid-area: leftUp;
-    justify-self: center;
 }
 .flowerBack--rigthUp{
     opacity: 0.7;
@@ -402,7 +397,6 @@ main h2{
 .flowerBack--leftDown{
     opacity: 0.7;
     grid-area: leftDown;
-    justify-self: center;
 }
 .flowerBack--rigthDown{
     opacity: 0.7;
@@ -433,6 +427,7 @@ main h2{
     }
  }
  .section--conFondo{
+     height: fit-content;
      display:flex;
      justify-content: center;
      align-items: center;
