@@ -23,13 +23,10 @@ html{
 /* HEADER GENERICO */
 
 header{
-    grid-area: header;
-    display:flex;
-    align-items: center;
     background-color: #8eecf5;
     
 }
-header a img{
+.logo{
     height: 100px;
 }
 header ul{
@@ -37,7 +34,6 @@ header ul{
     position: absolute;
     right: 0;
     padding-right: 1rem;
-    padding-bottom: 2rem;
 }
 header ul li a{
     margin-left: 1rem;
@@ -50,11 +46,6 @@ header ul li a:hover{
     padding: 0.2rem;
     border-radius: 200px 200px 200px 0px;
     background: rgb(255, 255, 255, 0.5);
-}
-header ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
 }
 
 .header__list--selectedItem {
@@ -256,7 +247,7 @@ footer div a{
 }
 .pharagrap{
     text-align: justify;
-    font-size: 20px;
+    font-size: 1.4rem;
     color: white;
     font-family: 'Amatic SC', cursive;
 }
@@ -436,4 +427,7 @@ main h2{
      width: 90%;
      height: 90%;
  }
- 
+.img--carousel{
+  height: 50vh;
+  object-fit: cover;
+}
