@@ -1,0 +1,37 @@
+
+.img--carousel{
+    height: 50vh;
+    object-fit: cover;
+}
+
+.contenedor__imagen--chico{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px black;
+}
+
+.pharagrap{
+    text-align: justify;
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+
+.section--conFondo{
+    height: fit-content;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono{
+    width: 25px;
+    height: 25px;
+}
+
+.imagenPrincipal{
+    position: absolute;
+    bottom:-5rem;
+    width: 100%;
+}

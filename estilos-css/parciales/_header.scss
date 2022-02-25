@@ -1,0 +1,56 @@
+
+header{
+    background-color: #8eecf5;
+    
+
+    ul{
+        font-size: 25px;
+        position: absolute;
+        right: 0;
+        padding-right: 1rem;
+    
+        li{
+            a{
+            margin-left: 1rem;
+            text-decoration: none;
+            font-family: 'Amatic SC', cursive;
+            background-color: #8eecf5;
+            color: black;
+            }
+            a:hover{
+                padding: 0.2rem;
+                border-radius: 200px 200px 200px 0px;
+                background: rgb(255, 255, 255);
+            }
+        }
+    }
+    &__list--selectedItem {
+        padding: 0.5rem;
+        border-radius: 200px 200px 200px 0px;
+        background: rgb(255, 255, 255);
+        font-weight: bold;
+    } /*No logro hacer que al pasar el cursor no se modifique*/
+    
+    @media (max-width: 991px) {
+        &__list--selectedItem {
+            padding: 0.5rem;
+            border-radius: 0px;
+            opacity: 1 ;
+            background-color: #8eecf8;
+        }
+    }
+}
+
+.navbar-collapse {
+    text-align:center;
+
+}
+
+    
+.logo{
+    height: 100px;
+}
+
+.front{
+    z-index: 1;
+}

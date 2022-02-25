@@ -1,0 +1,146 @@
+header {
+  background-color: #8eecf5;
+  /*No logro hacer que al pasar el cursor no se modifique*/
+}
+
+header ul {
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  padding-right: 1rem;
+}
+
+header ul li a {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  background-color: #8eecf5;
+  color: black;
+}
+
+header ul li a:hover {
+  padding: 0.2rem;
+  border-radius: 200px 200px 200px 0px;
+  background: white;
+}
+
+.header__list--selectedItem {
+  padding: 0.5rem;
+  border-radius: 200px 200px 200px 0px;
+  background: white;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .header__list--selectedItem {
+    padding: 0.5rem;
+    border-radius: 0px;
+    opacity: 1;
+    background-color: #8eecf8;
+  }
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.logo {
+  height: 100px;
+}
+
+.front {
+  z-index: 1;
+}
+
+footer {
+  grid-area: footer;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer p {
+  color: white;
+}
+
+footer section {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div a {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.footer__redes {
+  margin: 1rem;
+  border-right: 2px solid #FFFF;
+}
+
+.footer__inferior {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.img--carousel {
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contenedor__imagen--chico {
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 1px black;
+          box-shadow: 1px black;
+}
+
+.pharagrap {
+  text-align: justify;
+  font-size: 1.4rem;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+}
+
+.section--conFondo {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icono {
+  width: 25px;
+  height: 25px;
+}
+
+.imagenPrincipal {
+  position: absolute;
+  bottom: -5rem;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
