@@ -1,3 +1,4 @@
+@import "./generic";
 
 .img--carousel{
     height: 50vh;
@@ -5,9 +6,9 @@
 }
 
 .contenedor__imagen--chico{
-    overflow: hidden;
-    width: 300px;
-    height: 300px;
+    @include contenedor;
+    width: map-get($contenedores, wChico);
+    height: map-get($contenedores, hGrande);
     box-shadow: 1px black;
 }
 
@@ -20,9 +21,7 @@
 
 .section--conFondo{
     height: fit-content;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 }
 
 .icono{

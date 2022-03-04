@@ -24,7 +24,7 @@ header ul li a:hover {
   background: white;
 }
 
-.header__list--selectedItem {
+header__list--selectedItem {
   padding: 0.5rem;
   border-radius: 200px 200px 200px 0px;
   background: white;
@@ -32,11 +32,11 @@ header ul li a:hover {
 }
 
 @media (max-width: 991px) {
-  .header__list--selectedItem {
+  header__list--selectedItem {
     padding: 0.5rem;
     border-radius: 0px;
     opacity: 1;
-    background-color: #8eecf8;
+    background-color: #8eecff;
   }
 }
 
@@ -62,6 +62,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
+  bottom: 0px;
 }
 
 footer p {
@@ -87,12 +89,12 @@ footer div a {
   margin-right: 1px;
 }
 
-.footer__redes {
+footer__redes {
   margin: 1rem;
-  border-right: 2px solid #FFFF;
+  border-right: 2px solid white;
 }
 
-.footer__inferior {
+footer__inferior {
   text-align: center;
   margin-bottom: 1rem;
 }

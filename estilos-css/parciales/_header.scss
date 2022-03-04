@@ -1,6 +1,7 @@
+@import "./generic";
 
 header{
-    background-color: #8eecf5;
+    background-color: $celesteClaro;
     
 
     ul{
@@ -14,20 +15,20 @@ header{
             margin-left: 1rem;
             text-decoration: none;
             font-family: 'Amatic SC', cursive;
-            background-color: #8eecf5;
+            background-color: $celesteClaro;
             color: black;
             }
             a:hover{
                 padding: 0.2rem;
                 border-radius: 200px 200px 200px 0px;
-                background: rgb(255, 255, 255);
+                background: white;
             }
         }
     }
     &__list--selectedItem {
         padding: 0.5rem;
         border-radius: 200px 200px 200px 0px;
-        background: rgb(255, 255, 255);
+        background: white;
         font-weight: bold;
     } /*No logro hacer que al pasar el cursor no se modifique*/
     
@@ -36,16 +37,16 @@ header{
             padding: 0.5rem;
             border-radius: 0px;
             opacity: 1 ;
-            background-color: #8eecf8;
+            background-color: #8eecff;
         }
     }
 }
 
 .navbar-collapse {
+    
     text-align:center;
 
 }
-
     
 .logo{
     height: 100px;

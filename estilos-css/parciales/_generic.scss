@@ -1,0 +1,20 @@
+$celesteClaro: #8eecf5;
+
+$contenedores: (
+    wChico: 300px,
+    wMediano: 500px,
+    wGrande: 700px,
+    hChico:50px,
+    hMediano:100px,
+    hGrande: 300px
+);
+
+
+@mixin flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin contenedor{
+    overflow:hidden;
+}
