@@ -78,6 +78,11 @@ main{
     color: black;
     font-size: 20px;
 }
+.contact_section{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 .contacto__data{
     display: flex;
     flex-direction: column;
@@ -86,7 +91,9 @@ main{
     left: 1rem;
     --glow-color: #8eecf5;
     --glow-spread-color: rgba(130, 97, 250, 0.781);
-    width: 500px;
+    width: 40%;
+    margin-left: 1rem;
+    margin-right: 1rem;
     height: 295px;
     box-shadow: 0 0 0.6em .25em var(--glow-color),
     0 0 2.5em 0.5em var(--glow-spread-color),
@@ -125,6 +132,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: hidden;
 }
 .contacto_form legend{
     
@@ -141,9 +149,6 @@ main{
     margin-top: 1rem;
     color: white;
     font-family: 'Amatic SC', cursive;
-}
-.contacto_form fieldset{
-    border: hidden;
 }
 .contacto_button{
     --glow-color: #90dbf4;
@@ -246,18 +251,39 @@ main h2{
     position: relative;
 }
 .imagen--horizontal{
-    height: 100%;
+    height: auto;
 }
 .imagen--vertical{
     width: 100%;
 }
-.portfolio__contenedorDeImagen{
-    overflow: hidden;
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    box-shadow: -4px 4px 10px rgb(27, 0, 34);
+
+@media (max-width: 1300px) {
+    .portfolio__contenedorDeImagen{
+        position: relative;
+        overflow: hidden;
+        height:0;
+        width:50%;
+        padding-bottom:50%;
+        border-radius: 5px;
+        box-shadow: -4px 4px 10px rgb(27, 0, 34);
+    }
 }
+@media (min-width: 1300px){
+    .portfolio__contenedorDeImagen{
+        position: relative;
+        overflow: hidden;
+        height:150px;
+        width:150px;
+        border-radius: 5px;
+        box-shadow: -4px 4px 10px rgb(27, 0, 34);
+    }
+}
+@media (max-width: 1300px) {
+    .flower--leftUp{
+        grid-area: leftUp;
+    }
+}
+@media (min-width: 1300px){
 .flowerSection--front{
     position: absolute;
     /*top: 0px;*/
@@ -273,45 +299,125 @@ main h2{
                          "leftCenter center rigthCenter"
                          "leftDown centerDown rigthDown"
 }
-.flower--leftUp{
-    grid-area: leftUp;
-    justify-self: center;
-    align-self: end;
 }
-.flower--centerUp{
-    grid-area: centerUp;
-    align-self: start;
+@media (max-width: 1300px) {
+    .flowerSection--front {
+        position: absolute;
+        width:100%;
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        row-gap: 10px;
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows: repeat(3,33%);
+        grid-template-areas: "leftUp centerUp rigthUp"
+                            "leftCenter center rigthCenter"
+                            "leftDown centerDown rigthDown"
+    }
 }
-.flower--rigthUp{
-    grid-area: rigthUp;
-    justify-self: center;
-    align-self: end;
+@media  (min-width: 1300px) {
+    .flower--leftUp{
+        grid-area: leftUp;
+        justify-self: center;
+        align-self: end;
+    }
 }
-.flower--leftCenter{
-    grid-area: leftCenter;
-    justify-self: start;
+@media (max-width: 1300px) {
+    .flower--leftUp{
+        grid-area: leftUp;
+    }
 }
-.flower--center{
-    grid-area: center;
+@media  (min-width: 1300px) {
+    .flower--centerUp{
+        grid-area: centerUp;
+        align-self: start;
+    }
 }
-.flower--rigthCenter{
-    grid-area: rigthCenter;
-    justify-self: end;
+@media (max-width: 1300px) {
+    .flower--centerUp{
+        grid-area: centerUp;
+    }
 }
-.flower--leftDown{
-    grid-area: leftDown;
-    align-self: start;
-    justify-self: center;
+@media  (min-width: 1300px) {
+    .flower--rigthUp{
+        grid-area: rigthUp;
+        justify-self: center;
+        align-self: end;
+    }
 }
-.flower--centerDown{
-    grid-area: centerDown;
-    align-self: end;
+@media (max-width: 1300px) {
+    .flower--rigthUp{
+        grid-area: rigthUp;
+    }
 }
-.flower--rigthDown{
-    grid-area: rigthDown;
-    align-self: start;
-    justify-self: center;
+@media  (min-width: 1300px) {
+    .flower--leftCenter{
+        grid-area: leftCenter;
+        justify-self: start;
+    }
 }
+@media (max-width: 1300px) {
+    .flower--leftCenter{
+        grid-area: leftCenter;
+    }
+}
+@media  (min-width: 1300px) {
+    .flower--center{
+        grid-area: center;
+    }
+}
+@media (max-width: 1300px) {
+    .flower--center{
+        grid-area: center;
+    }
+}
+@media  (min-width: 1300px) {
+    .flower--rigthCenter{
+        grid-area: rigthCenter;
+        justify-self: end;
+    }
+}
+@media (max-width: 1300px) {
+    .flower--rigthCenter{
+        grid-area: rigthCenter;
+    }
+}
+@media  (min-width: 1300px) {
+    .flower--leftDown{
+        grid-area: leftDown;
+        align-self: start;
+        justify-self: center;
+    }
+}
+@media (max-width: 1300px) {
+    .flower--leftDown{
+        grid-area: leftDown;
+    }
+}
+@media  (min-width: 1300px) {
+    .flower--centerDown{
+        grid-area: centerDown;
+        align-self: end;
+    }
+}
+@media (max-width: 1300px) {
+    .flower--centerDown{
+        grid-area: centerDown;
+    }
+}
+@media  (min-width: 1300px) {
+    .flower--rigthDown{
+        grid-area: rigthDown;
+        align-self: start;
+        justify-self: center;
+    }
+}
+@media (max-width: 1300px) {
+    .flower--rigthDown{
+        grid-area: rigthDown;
+    }
+}
+
 .flowerSection--back{
     position: absolute;
     /*top: 0px;*/
@@ -365,7 +471,9 @@ main h2{
       opacity: 1;
     }
  }
- .flowerSection--front:hover{
-     width: 90%;
-     height: 90%;
- }
+ @media (min-width: 1300px){
+    .flowerSection--front:hover{
+        width: 90%;
+        height: 90%;
+    }
+}
