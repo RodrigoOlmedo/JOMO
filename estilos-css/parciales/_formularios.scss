@@ -1,0 +1,130 @@
+
+.contacto__h2{
+    margin-top: 2rem;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.contact_section{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto__data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --glow-color: #8eecf5;
+    --glow-spread-color: rgba(130, 97, 250, 0.781);
+    width: 40%;
+    height: auto;
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 0.5em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid var(--glow-color);
+    background: #90dbf4;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    margin-bottom:20px;
+    div{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align:center;
+        font-size: 1.5rem;
+    }
+}
+.contacto_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --glow-color: #c42cb7;
+    --glow-spread-color: rgba(176, 97, 250, 0.781);
+    width: 40%;
+    height: auto;
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 0.5em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid var(--glow-color);
+    background: #4d194d;
+    margin-top: 20px;
+
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: hidden;
+    }
+
+    legend{
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+        text-decoration: underline;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+
+    div{
+        text-align: center;
+        margin-top: 1rem;
+        color: white;
+        font-family: 'Amatic SC', cursive;
+    }
+}
+
+.contacto_button{
+    --glow-color: #90dbf4;
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: #0b525b;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 2em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+    margin-top: 1rem;
+   }
+   
+    .contacto_button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .contacto_button:hover {
+    color: black;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .contacto_button:active {
+        box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+
+        }

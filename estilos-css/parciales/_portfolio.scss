@@ -1,0 +1,146 @@
+
+@media (min-width: 1300px){
+    .portfolio__contenedorDeImagen{
+        position: relative;
+        overflow: hidden;
+        height:150px;
+        width:150px;
+        border-radius: 5px;
+        box-shadow: -4px 4px 10px rgb(27, 0, 34);
+    }
+    .flowerSection--front{
+        position: absolute;
+        /*top: 0px;*/
+        height: 60%;
+        width: 45%;
+        transition: width 2s, height 2s;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows: repeat(3,33%);
+        grid-template-areas: "leftUp centerUp rigthUp"
+                            "leftCenter center rigthCenter"
+                            "leftDown centerDown rigthDown"
+    }
+    .flower--leftUp{
+        grid-area: leftUp;
+        justify-self: center;
+        align-self: end;
+    }
+    .flower--centerUp{
+        grid-area: centerUp;
+        align-self: start;
+    }
+    .flower--rigthUp{
+        grid-area: rigthUp;
+        justify-self: center;
+        align-self: end;
+    }
+    .flower--leftCenter{
+        grid-area: leftCenter;
+        justify-self: start;
+    }
+    .flower--center{
+        grid-area: center;
+    }
+    .flower--rigthCenter{
+        grid-area: rigthCenter;
+        justify-self: end;
+    }
+    .flower--leftDown{
+        grid-area: leftDown;
+        align-self: start;
+        justify-self: center;
+    }
+    .flower--centerDown{
+        grid-area: centerDown;
+        align-self: end;
+    }
+    .flower--rigthDown{
+        grid-area: rigthDown;
+        align-self: start;
+        justify-self: center;
+    }
+}
+@media (max-width: 1300px) {
+    .portfolio__contenedorDeImagen{
+        position: relative;
+        overflow: hidden;
+        height:0;
+        width:50%;
+        padding-bottom:50%;
+        border-radius: 5px;
+        box-shadow: -4px 4px 10px rgb(27, 0, 34);
+    }
+    .flowerSection--front {
+        position: absolute;
+        width:100%;
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        row-gap: 10px;
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows: repeat(3,33%);
+        grid-template-areas: "leftUp centerUp rigthUp"
+                            "leftCenter center rigthCenter"
+                            "leftDown centerDown rigthDown"
+    }
+    .flower--leftUp{
+        grid-area: leftUp;
+    }
+    .flower--centerUp{
+        grid-area: centerUp;
+    }
+    .flower--rigthUp{
+        grid-area: rigthUp;
+    }
+    .flower--leftCenter{
+        grid-area: leftCenter;
+    }
+    .flower--center{
+        grid-area: center;
+    }
+    .flower--rigthCenter{
+        grid-area: rigthCenter;
+    }
+    .flower--leftDown{
+        grid-area: leftDown;
+    }
+
+    .flower--centerDown{
+        grid-area: centerDown;
+    }
+    .flower--rigthDown{
+        grid-area: rigthDown;
+    }
+}
+
+.flowerSection--back{
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,50%);
+    grid-template-areas: "leftUp  rigthUp"
+                         "leftDown rigthDown"
+}
+.flowerBack--leftUp{
+    opacity: 0.7;
+    grid-area: leftUp;
+}
+.flowerBack--rigthUp{
+    opacity: 0.7;
+    grid-area: rigthUp;
+}
+.flowerBack--leftDown{
+    opacity: 0.7;
+    grid-area: leftDown;
+}
+.flowerBack--rigthDown{
+    opacity: 0.7;
+    grid-area: rigthDown;
+}

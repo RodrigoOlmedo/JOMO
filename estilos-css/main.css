@@ -24,7 +24,7 @@ header ul li a:hover {
   background: white;
 }
 
-header__list--selectedItem {
+.header__list--selectedItem {
   padding: 0.5rem;
   border-radius: 200px 200px 200px 0px;
   background: white;
@@ -32,7 +32,7 @@ header__list--selectedItem {
 }
 
 @media (max-width: 991px) {
-  header__list--selectedItem {
+  .header__list--selectedItem {
     padding: 0.5rem;
     border-radius: 0px;
     opacity: 1;
@@ -97,6 +97,25 @@ footer div a {
   margin-bottom: 1rem;
 }
 
+.footer__superior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer_desc {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
 .img--carousel {
   height: 50vh;
   -o-object-fit: cover;
@@ -142,5 +161,384 @@ footer div a {
   position: absolute;
   bottom: -5rem;
   width: 100%;
+}
+
+.contacto__h2 {
+  margin-top: 2rem;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.contact_section {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacto__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  --glow-color: #8eecf5;
+  --glow-spread-color: rgba(130, 97, 250, 0.781);
+  width: 40%;
+  height: auto;
+  -webkit-box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 0.5em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+          box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 0.5em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid var(--glow-color);
+  background: #90dbf4;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contacto__data div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contacto_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  --glow-color: #c42cb7;
+  --glow-spread-color: rgba(176, 97, 250, 0.781);
+  width: 40%;
+  height: auto;
+  -webkit-box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 0.5em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+          box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 0.5em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid var(--glow-color);
+  background: #4d194d;
+  margin-top: 20px;
+}
+
+.contacto_form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: hidden;
+}
+
+.contacto_form legend {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  text-decoration: underline;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.contacto_form div {
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+}
+
+.contacto_button {
+  --glow-color: #90dbf4;
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: #0b525b;
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  -webkit-box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 2em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+          box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 2em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+  margin-top: 1rem;
+}
+
+.contacto_button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  -webkit-filter: blur(2em);
+          filter: blur(2em);
+  opacity: .7;
+  -webkit-transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+          transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.contacto_button:hover {
+  color: black;
+  background-color: var(--glow-color);
+  -webkit-box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+          box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.contacto_button:active {
+  -webkit-box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+          box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+@media (min-width: 1300px) {
+  .portfolio__contenedorDeImagen {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    -webkit-box-shadow: -4px 4px 10px #1b0022;
+            box-shadow: -4px 4px 10px #1b0022;
+  }
+  .flowerSection--front {
+    position: absolute;
+    /*top: 0px;*/
+    height: 60%;
+    width: 45%;
+    -webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: (33%)[3];
+        grid-template-columns: repeat(3, 33%);
+    -ms-grid-rows: (33%)[3];
+        grid-template-rows: repeat(3, 33%);
+        grid-template-areas: "leftUp centerUp rigthUp"
+ "leftCenter center rigthCenter"
+ "leftDown centerDown rigthDown";
+  }
+  .flower--leftUp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: leftUp;
+        justify-self: center;
+    -ms-flex-item-align: end;
+        align-self: end;
+  }
+  .flower--centerUp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: centerUp;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .flower--rigthUp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: rigthUp;
+        justify-self: center;
+    -ms-flex-item-align: end;
+        align-self: end;
+  }
+  .flower--leftCenter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: leftCenter;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .flower--center {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: center;
+  }
+  .flower--rigthCenter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: rigthCenter;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flower--leftDown {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: leftDown;
+    -ms-flex-item-align: start;
+        align-self: start;
+        justify-self: center;
+  }
+  .flower--centerDown {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: centerDown;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .flower--rigthDown {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: rigthDown;
+    -ms-flex-item-align: start;
+        align-self: start;
+        justify-self: center;
+  }
+}
+
+@media (max-width: 1300px) {
+  .portfolio__contenedorDeImagen {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    width: 50%;
+    padding-bottom: 50%;
+    border-radius: 5px;
+    -webkit-box-shadow: -4px 4px 10px #1b0022;
+            box-shadow: -4px 4px 10px #1b0022;
+  }
+  .flowerSection--front {
+    position: absolute;
+    width: 100%;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -ms-grid;
+    display: grid;
+    row-gap: 10px;
+    -ms-grid-columns: (33%)[3];
+        grid-template-columns: repeat(3, 33%);
+    -ms-grid-rows: (33%)[3];
+        grid-template-rows: repeat(3, 33%);
+        grid-template-areas: "leftUp centerUp rigthUp"
+ "leftCenter center rigthCenter"
+ "leftDown centerDown rigthDown";
+  }
+  .flower--leftUp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: leftUp;
+  }
+  .flower--centerUp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: centerUp;
+  }
+  .flower--rigthUp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: rigthUp;
+  }
+  .flower--leftCenter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: leftCenter;
+  }
+  .flower--center {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: center;
+  }
+  .flower--rigthCenter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: rigthCenter;
+  }
+  .flower--leftDown {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: leftDown;
+  }
+  .flower--centerDown {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: centerDown;
+  }
+  .flower--rigthDown {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: rigthDown;
+  }
+}
+
+.flowerSection--back {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+      grid-template-areas: "leftUp  rigthUp"
+ "leftDown rigthDown";
+}
+
+.flowerBack--leftUp {
+  opacity: 0.7;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: leftUp;
+}
+
+.flowerBack--rigthUp {
+  opacity: 0.7;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: rigthUp;
+}
+
+.flowerBack--leftDown {
+  opacity: 0.7;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: leftDown;
+}
+
+.flowerBack--rigthDown {
+  opacity: 0.7;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: rigthDown;
 }
 /*# sourceMappingURL=main.css.map */

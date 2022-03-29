@@ -2,13 +2,13 @@
     Margin:0;
     padding:0;
     box-sizing: border-box;
- }
+}
 html{
     min-height: 100%;
     position: relative;
     
 }
- body {
+body {
     display: grid;
     height: 100%;
     background: rgba(0,100,102,1);
@@ -61,145 +61,18 @@ header ul li a:hover{
         opacity: 1 ;
         background-color: #8eecf8;
     }
-    }
+}
     
 /* FIN HEADER GENERICO */
 
 main{
+
     grid-area: main;
     display: block;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; 
     
 }
-
-.contacto__h2{
-    margin-top:2rem;
-    color: black;
-    font-size: 20px;
-}
-.contact_section{
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-.contacto__data{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    left: 1rem;
-    --glow-color: #8eecf5;
-    --glow-spread-color: rgba(130, 97, 250, 0.781);
-    width: 40%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    height: 295px;
-    box-shadow: 0 0 0.6em .25em var(--glow-color),
-    0 0 2.5em 0.5em var(--glow-spread-color),
-    inset 0 0 .5em .25em var(--glow-color);
-    border-radius: 200px 200px 200px 0px;
-    border: 1px solid var(--glow-color);
-    background: #90dbf4;
-    border-radius: 200px 200px 1px 200px;
-    font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-}
-.contacto__data div{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 20px;
-}
-.contacto_form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    --glow-color: #c42cb7;
-    --glow-spread-color: rgba(176, 97, 250, 0.781);
-    position: absolute;
-    right: 0;
-    width: 500px;
-    box-shadow: 0 0 0.6em .25em var(--glow-color),
-    0 0 2.5em 0.5em var(--glow-spread-color),
-    inset 0 0 .5em .25em var(--glow-color);
-    border-radius: 200px 200px 200px 0px;
-    border: 1px solid var(--glow-color);
-    background: #4d194d;
-    margin-right: 20px;
-}
-.contacto_form fieldset{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: hidden;
-}
-.contacto_form legend{
-    
-    color: white;
-    padding-top: 20px;
-    text-decoration: underline;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
-    font-weight: bold;
-    
-}
-.contacto_form div{
-    text-align: center;
-    margin-top: 1rem;
-    color: white;
-    font-family: 'Amatic SC', cursive;
-}
-.contacto_button{
-    --glow-color: #90dbf4;
-    --glow-spread-color: rgba(191, 123, 255, 0.781);
-    --enhanced-glow-color: rgb(231, 206, 255);
-    --btn-color: #0b525b;
-    border: .25em solid var(--glow-color);
-    padding: 1em 3em;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: var(--btn-color);
-    border-radius: 1em;
-    outline: none;
-    box-shadow: 0 0 1em .25em var(--glow-color),
-            0 0 2em 1em var(--glow-spread-color),
-            inset 0 0 .75em .25em var(--glow-color);
-    text-shadow: 0 0 .5em var(--glow-color);
-    position: relative;
-    transition: all 0.3s;
-    margin-bottom: 10px;
-    margin-top: 1rem;
-   }
-   
-    .contacto_button::after {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: .7;
-    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
-   }
-   
-   .contacto_button:hover {
-    color: black;
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em .25em var(--glow-color),
-           0 0 4em 2em var(--glow-spread-color),
-           inset 0 0 .75em .25em var(--glow-color);
-   }
-   
-   .contacto_button:active {
-    box-shadow: 0 0 0.6em .25em var(--glow-color),
-           0 0 2.5em 2em var(--glow-spread-color),
-           inset 0 0 .5em .25em var(--glow-color);
-   }
 
 .textoConImagen{
     margin-bottom: 1.5rem;
@@ -251,202 +124,12 @@ main h2{
     position: relative;
 }
 .imagen--horizontal{
-    height: auto;
+    height: 100%;
 }
 .imagen--vertical{
     width: 100%;
 }
 
-@media (max-width: 1300px) {
-    .portfolio__contenedorDeImagen{
-        position: relative;
-        overflow: hidden;
-        height:0;
-        width:50%;
-        padding-bottom:50%;
-        border-radius: 5px;
-        box-shadow: -4px 4px 10px rgb(27, 0, 34);
-    }
-}
-@media (min-width: 1300px){
-    .portfolio__contenedorDeImagen{
-        position: relative;
-        overflow: hidden;
-        height:150px;
-        width:150px;
-        border-radius: 5px;
-        box-shadow: -4px 4px 10px rgb(27, 0, 34);
-    }
-}
-@media (max-width: 1300px) {
-    .flower--leftUp{
-        grid-area: leftUp;
-    }
-}
-@media (min-width: 1300px){
-.flowerSection--front{
-    position: absolute;
-    /*top: 0px;*/
-    height: 60%;
-    width: 45%;
-    transition: width 2s, height 2s;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(3,33%);
-    grid-template-rows: repeat(3,33%);
-    grid-template-areas: "leftUp centerUp rigthUp"
-                         "leftCenter center rigthCenter"
-                         "leftDown centerDown rigthDown"
-}
-}
-@media (max-width: 1300px) {
-    .flowerSection--front {
-        position: absolute;
-        width:100%;
-        justify-items: center;
-        align-items: center;
-        display: grid;
-        row-gap: 10px;
-        grid-template-columns: repeat(3,33%);
-        grid-template-rows: repeat(3,33%);
-        grid-template-areas: "leftUp centerUp rigthUp"
-                            "leftCenter center rigthCenter"
-                            "leftDown centerDown rigthDown"
-    }
-}
-@media  (min-width: 1300px) {
-    .flower--leftUp{
-        grid-area: leftUp;
-        justify-self: center;
-        align-self: end;
-    }
-}
-@media (max-width: 1300px) {
-    .flower--leftUp{
-        grid-area: leftUp;
-    }
-}
-@media  (min-width: 1300px) {
-    .flower--centerUp{
-        grid-area: centerUp;
-        align-self: start;
-    }
-}
-@media (max-width: 1300px) {
-    .flower--centerUp{
-        grid-area: centerUp;
-    }
-}
-@media  (min-width: 1300px) {
-    .flower--rigthUp{
-        grid-area: rigthUp;
-        justify-self: center;
-        align-self: end;
-    }
-}
-@media (max-width: 1300px) {
-    .flower--rigthUp{
-        grid-area: rigthUp;
-    }
-}
-@media  (min-width: 1300px) {
-    .flower--leftCenter{
-        grid-area: leftCenter;
-        justify-self: start;
-    }
-}
-@media (max-width: 1300px) {
-    .flower--leftCenter{
-        grid-area: leftCenter;
-    }
-}
-@media  (min-width: 1300px) {
-    .flower--center{
-        grid-area: center;
-    }
-}
-@media (max-width: 1300px) {
-    .flower--center{
-        grid-area: center;
-    }
-}
-@media  (min-width: 1300px) {
-    .flower--rigthCenter{
-        grid-area: rigthCenter;
-        justify-self: end;
-    }
-}
-@media (max-width: 1300px) {
-    .flower--rigthCenter{
-        grid-area: rigthCenter;
-    }
-}
-@media  (min-width: 1300px) {
-    .flower--leftDown{
-        grid-area: leftDown;
-        align-self: start;
-        justify-self: center;
-    }
-}
-@media (max-width: 1300px) {
-    .flower--leftDown{
-        grid-area: leftDown;
-    }
-}
-@media  (min-width: 1300px) {
-    .flower--centerDown{
-        grid-area: centerDown;
-        align-self: end;
-    }
-}
-@media (max-width: 1300px) {
-    .flower--centerDown{
-        grid-area: centerDown;
-    }
-}
-@media  (min-width: 1300px) {
-    .flower--rigthDown{
-        grid-area: rigthDown;
-        align-self: start;
-        justify-self: center;
-    }
-}
-@media (max-width: 1300px) {
-    .flower--rigthDown{
-        grid-area: rigthDown;
-    }
-}
-
-.flowerSection--back{
-    position: absolute;
-    /*top: 0px;*/
-    width: 30%;
-    height: 40%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: repeat(2,50%);
-    grid-template-rows: repeat(2,50%);
-    grid-template-areas: "leftUp  rigthUp"
-                         "leftDown rigthDown"
-}
-.flowerBack--leftUp{
-    opacity: 0.7;
-    grid-area: leftUp;
-}
-.flowerBack--rigthUp{
-    opacity: 0.7;
-    grid-area: rigthUp;
-}
-.flowerBack--leftDown{
-    opacity: 0.7;
-    grid-area: leftDown;
-}
-.flowerBack--rigthDown{
-    opacity: 0.7;
-    grid-area: rigthDown;
-}
 
   .cont--circular{
     overflow: hidden;
@@ -461,7 +144,7 @@ main h2{
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: once;
- }
+}
 
  @keyframes aparecer {
     0% {
